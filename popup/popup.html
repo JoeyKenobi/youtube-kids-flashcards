@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Kids Flashcards</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1 class="popup-title">📚 YK Flashcards</h1>
+    <p class="popup-subtitle">Make screen time learning time</p>
+
+    <div class="setting-group">
+      <label class="toggle-label">
+        <span>Enabled</span>
+        <input type="checkbox" id="enabled-toggle" checked>
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+
+    <div class="setting-group">
+      <label for="interval-input">Interrupt every</label>
+      <div class="interval-row">
+        <input type="number" id="interval-input" min="1" max="60" value="5">
+        <span>minutes</span>
+      </div>
+    </div>
+
+
+    <button id="save-btn" class="save-btn">Save Settings</button>
+
+    <div id="status-msg" class="status-msg"></div>
+
+    <div class="stats-section">
+      <h3>Recent Stats</h3>
+      <div id="stats-content" class="stats-content">
+        <p>No activity yet.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

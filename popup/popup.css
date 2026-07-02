@@ -1,0 +1,200 @@
+/* YouTube Kids Flashcards — Popup Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #1a1a2e;
+}
+
+.popup-container {
+  padding: 24px 20px;
+}
+
+.popup-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a73e8;
+  margin-bottom: 4px;
+}
+
+.popup-subtitle {
+  font-size: 13px;
+  color: #5f6368;
+  margin-bottom: 20px;
+}
+
+/* Settings Groups */
+.setting-group {
+  margin-bottom: 16px;
+}
+
+.setting-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3c4043;
+  margin-bottom: 6px;
+}
+
+.interval-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.interval-row input {
+  width: 64px;
+  padding: 8px 10px;
+  border: 2px solid #dadce0;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.interval-row input:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+.interval-row span {
+  font-size: 14px;
+  color: #5f6368;
+}
+
+/* Subject Checkboxes */
+.subject-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.subject-label {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500 !important;
+  color: #3c4043;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.subject-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #1a73e8;
+  cursor: pointer;
+}
+
+/* Toggle Switch */
+.toggle-label {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.toggle-label input {
+  display: none;
+}
+
+.toggle-slider {
+  width: 44px;
+  height: 24px;
+  background: #dadce0;
+  border-radius: 12px;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.toggle-slider::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-label input:checked + .toggle-slider {
+  background: #1a73e8;
+}
+
+.toggle-label input:checked + .toggle-slider::after {
+  transform: translateX(20px);
+}
+
+/* Save Button */
+.save-btn {
+  width: 100%;
+  padding: 10px;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.save-btn:hover {
+  background: #1557b0;
+}
+
+.save-btn:active {
+  background: #174ea6;
+}
+
+/* Status Message */
+.status-msg {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 8px;
+  min-height: 20px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Stats Section */
+.stats-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.stats-section h3 {
+  font-size: 14px;
+  color: #3c4043;
+  margin-bottom: 8px;
+}
+
+.stats-content {
+  font-size: 13px;
+  color: #5f6368;
+}
+
+.stats-content p {
+  margin-bottom: 4px;
+}
+
+.stat-correct {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.stat-incorrect {
+  color: #dc3545;
+  font-weight: 600;
+}

@@ -50,4 +50,4 @@ This extension stores all data locally on your device. No data is collected, tra
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+CC BY-NC 4.0 — You may share and adapt this work with attribution, but not for commercial purposes. See [LICENSE](LICENSE) for details.
